@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hotel booking</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
+
+    <script>
+      function stopVideo(imageID,videoID){
+        var videoPlayer = document.getElementById(videoID);
+        var imageContainer = document.getElementById(imageID);
+          videoPlayer.style.display = "none";
+          imageContainer.style.display = "block";
+      }
+      function playVideo(file,imageID,videoID,myVideo){
+        var videoPlayer = document.getElementById(videoID);
+      var myvideo = document.getElementById(myVideo);
+      var imageContainer = document.getElementById(imageID);
+      
+          myvideo.src = file; 
+          imageContainer.style.display = "none";
+          videoPlayer.style.display = "block";
+      }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <a href="#" id="logo"><img src="logo1.jpg" alt=""></a>
+        <nav class="navbar">
+            <a href="#">home</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#about us">About Us</a>
+            <a href="#reservation">Reservation</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="icons">
+            
+            <div class="fas fa-user" id="myuser"></div>
+            <div class="fas fa-search" id="serach-bar"></div>
+            <div class="fas fa-bars" id="menu-bars"></div>
+        </div>
+
+        <div class="search-box">
+            <input type="search" placeholder="search here">
+        </div>
+        
+    </header>
+<!-- background image -->
+
+    <div class="main-background">
+        <div class="main-text">
+            <h1>LOTUS</h1>
+        <h2>A promise of a new tomorrow</h2>
+        </div>
+        
+    </div> 
+    <!-- background image ended -->
+
+    
+    
+</div>
+<!-- booking secton ended -->
+
+<!-- award winning ended -->
+<!-- roomes -->
+   <div class="our-rooms" id="reservation">
+       <h1>Our <span>rooms</span></h1>
+       <div class="inner-rooms">
+           <div class="room-box">
+               <img src="room1.jpg" alt="">
+               <div class="beds">
+                   <span>Single Room</span><i class="fas fa-bed"></i>
+               </div>
+               <div class="book-room-btn">
+                <a href="#" class="book-room">Book now</a>
+            </div>
+           </div>
+
+           <div class="room-box">
+            <img src="award4.png" alt="">
+            <div class="beds">
+                <span>Double Room</span><i class="fas fa-bed"></i>
+            </div>
+            <div class="book-room-btn">
+                <a href="#" class="book-room">Book now</a>
+            </div>
+        </div>
+
+        <div class="room-box">
+            <img src="Triple room.png" alt="">
+            <div class="beds">
+                <span>Triple Room</span><i class="fas fa-bed"></i>
+            </div>
+           
+                <div class="book-room-btn">
+                    <a href="#" class="book-room">Book now</a>
+                </div>
+   
+            
+        </div>
+       </div>
+   </div>
+
+   <section class="review">
+    <div class="review__container">
+      <div class="review__score">
+        <h3>4.8/5</h3>
+        <h4>Excellent</h4>
+        <a href="#">Based on 4984 reviews</a>
+      </div>
+
+      <div class="review__customers">
+        <figure class="quote">
+          <blockquote class="quote__text">
+            One of the best vacations I ever had. The hotel is modern and
+            clean but also refreshing and comforting. It provides you with
+            everything you need.
+          </blockquote>
+          <figcatpion class="quote__customer">
+            <img
+              class="quote__photo"
+              src="luxc.jpg"
+              alt="pic of a customer"
+            />
+            <div class="quote__customer-container">
+              <p class="quote__customer-name">Laksiga Pandaranayaka</p>
+              <p class="quote__customer-date">Jan 3rd, 2021</p>
+            </div>
+            <div class="quote__rating">4.8</div>
+          </figcatpion>
+        </figure>
+
+        <figure class="quote">
+          <blockquote class="quote__text">
+            I really fell in love with the resort. Nice location, nice
+            people and awesome employees. My friend and I had a really nice
+            time there and we enjoyed the ocean ambient.
+          </blockquote>
+          <figcatpion class="quote__customer">
+            <img
+              class="quote__photo"
+              src="aari.jpg"
+              alt="pic of a customer"
+            />
+            <div class="quote__customer-container">
+              <p class="quote__customer-name">Aariyanka Senanayaka
+
+              </p>
+              <p class="quote__customer-date">Feb 22nd, 2021</p>
+            </div>
+            <div class=cquote__rating">4.5</div>
+          </figcatpion>
+        </figure>
+
+        <button class="quote__button">Show all <span>&rarr;</span></button>
+      </div>
+    </div>
+  </section> 
+
+<!-- roomes ended -->
+<section class="hotel">
+    <div class="hotel__wrapper">
+    <div class="hotel__description">
+      <h2>Our Rooms, Suites and Signature Suites</h2>
+      <p>
+        The LOTUS Hotel Rooms and Suites will give you the refreshing
+        experience that you deserve. Our Hotel has an ocean inspired look
+        and is located next to the beach. Book now and relax at our resort.
+      </p>
+    </div>
+    </div>
+    <div class="rooms">
+      <div class="rooms__guest rooms__container">
+        <img
+          id="image-container-1"
+          class="rooms__img"
+          src="guest2.jpg"
+          alt="guest room with bed"
+        />
+        <div class="video-player" id="video-player-1">
+            <video width="100%" controls autoplay id="my-video-1">
+                <source src="guest room.mp4" type="video/mp4">
+            </video>
+            <img src="close.png" class="close-btn" onclick="stopVideo('image-container-1','video-player-1')">
+        </div>
+        <h3>Our Guest Rooms</h3>
+        <p>
+          Our guest rooms are modern and come with king or queen sized beds.
+          Enjoy your stay in a modern, fresh room.
+        </p>
+        <button class="rooms__button" onclick="playVideo('guest room.mp4','image-container-1','video-player-1','my-video-1')">EXPLORE</button>
+      </div>
+
+      <div class="rooms__suite rooms__container">
+        <img
+        id="image-container-2"
+          class="rooms__img"
+          src="suite.jpg"
+          alt="suite with terrace"
+        />
+        <div class="video-player" id="video-player-2">
+          <video width="100%" controls autoplay id="my-video-2">
+              <source src="suites.mp4" type="video/mp4">
+          </video>
+          <img src="close.png" class="close-btn" onclick="stopVideo('image-container-2','video-player-2')">
+      </div>
+        <h3>Our Suites</h3>
+        <p>
+          Our Suites provide enough space to relax. It is the most popular
+          offer for families and couples. Enjoy the view on your perosnal
+          terrace.
+        </p>
+        <button class="rooms__button" onclick="playVideo('Suites.mp4','image-container-2','video-player-2','my-video-2')">EXPLORE</button>
+      </div>
+
+      <div class="rooms__signature rooms__container">
+        <img
+         id="image-container-3"
+          class="rooms__img"
+          src="signature.jpg"
+          alt="signature suite with outside area"
+        />
+        <div class="video-player" id="video-player-3">
+          <video width="100%" controls autoplay id="my-video-3">
+              <source src="signature suite.mp4" type="video/mp4">
+          </video>
+          <img src="close.png" class="close-btn" onclick="stopVideo('image-container-3','video-player-3')">
+      </div>
+        <h3>Our Signature Suites</h3>
+        <p>
+          Our Signature Suites offer the most amount of space. They provide
+          an extra comforting and refreshing experience. Enjoy the freedom
+          of your outside area.
+        </p>
+        <button class="rooms__button" onclick="playVideo('signature suite.mp4','image-container-3','video-player-3','my-video-3')">EXPLORE</button>
+      </div>
+    </div>
+  </section>
+  
+  <section class="activities">
+    <div class="activities__left">
+      <div class="activity">
+        <img class="activity__image" src="chill2.jpg" alt="chilling activity"id="image-container-4" >
+        <div class="video-player" id="video-player-4">
+          <video width="100%" controls autoplay id="my-video-4">
+              <source src="videoplayback (6).jpg" type="video/mp4">
+          </video>
+          <img src="close.png" class="close-btn" onclick="stopVideo('image-container-4','video-player-4')">
+      </div>
+        <h3>Relax On Our Aqua Beds</h3>
+        <p>The aqaurius area offers the most refreshing experience. Enjoy the sunset on comforting beds while having the feet in cooled water.</p>
+        <button class="rooms__button" onclick="playVideo('videoplayback (6).mp4','image-container-4','video-player-4','my-video-4')">EXPLORE</button>
+      </div>
+
+      <div class="activity">
+        <img class="activity__image" src="chill.jpg" alt="chilling activity" id="image-container-5">
+        <div class="video-player" id="video-player-5">
+          <video width="100%" controls autoplay id="my-video-5">
+              <source src="Relax At Our Beach.mp4" type="video/mp4">
+          </video>
+          <img src="close.png" class="close-btn" onclick="stopVideo('image-container-5','video-player-5')">
+      </div>
+        <h3>Relax at our Beach Bar</h3>
+        <p>Right next to our main pool, you can find and chill at the beach bar. Order your favourite drinks while relaxing to the beach vibe.</p>
+        <button class="rooms__button" onclick="playVideo('Relax At Our Beach.mp4','image-container-5','video-player-5','my-video-5')">EXPLORE</button>
+      </div>
+
+      <div class="activity">
+        <img class="activity__image" src="museum.jpg" alt="chilling activity" id="image-container-6">
+        <div class="video-player" id="video-player-6">
+          <video width="100%" controls autoplay id="my-video-6">
+              <source src="The Museum.mp4" type="video/mp4">
+          </video>
+          <img src="close.png" class="close-btn" onclick="stopVideo('image-container-6','video-player-6')">
+      </div>
+        <h3>Explore The Museum</h3>
+        <p>Our outdoor Museum of extincted animals is very popular among our guests. Come and see all the animals of the past.</p>
+        <button class="rooms__button" onclick="playVideo('The Museum.mp4','image-container-6','video-player-6','my-video-6')">EXPLORE</button>
+      </div>
+    </div>
+
+    <div class="activities__right">
+      <h2>Activities Are Included In Your Stay</h2>
+      <p>All activities are Included to every Room and Suite booking, so that you can enjoy your time at the hotel together. Come and explore everything we have to offer.</p>
+    </div>
+
+  </section>
+
+  <section class="deluxe">
+    <div class="deluxe__club">
+      <h2>Deluxe Club</h2>
+      <p>The Signature Suites come with access to the Deluxe Club. It has all the luxury you need. Private relax areas, Golf area, speacial exotic drinks, brought to you and many more...</p>
+      <button class="deluxe__button">EXPLORE</button>
+      <div class="deluxe__container">
+        <img class="deluxe__image" src="deluxe.jpg" alt="photo of deluxe hall">
+      </div>
+    </div>   
+  </section>
+
+</div>
+
+<!-- our gallery -->
+<section class="gallery">
+   <div class="gallery" id="gallery">
+    <h1> <center><span>Gallery</span></center></h1>
+    <a href="pic3.jpg"  data-lightbox="hotel" data-title="LOTUS"><img src="pic3.jpg"> </a>
+    <a href="pic6.jpg" data-lightbox="hotel" data-title="LOTUS"><img src="pic6.jpg"> </a>
+    <a href="pic25.jpg" data-lightbox="hotel" data-title="LOTUS"><img src="pic25.jpg"> </a>
+    <a href="pic1.jpg" data-lightbox="hotel" data-title="LOTUS"><img src="pic1.jpg"> </a>
+    <a href="pic26.jpg" data-lightbox="hotel" data-title="LOTUS"><img src="pic26.jpg"> </a>
+    <a href="pic19.jpg" data-lightbox="hotel" data-title="LOTUS"><img src="pic19.jpg"> </a>
+    <a href="pic18.jpg" data-lightbox="hotel" data-title="LOTUS"><img src="pic18.jpg"> </a>
+    <a href="pic16.jpg" data-lightbox="hotel" data-title="LOTUS"><img src="pic16.jpg"> </a>
+    <a href="pic15.jpg" data-lightbox="hotel" data-title="LOTUS"><img src="pic15.jpg"> </a>
+    <a href="pic4.jpg" data-lightbox="hotel" data-title="LOTUS"><img src="pic4.jpg"> </a>
+    <a href="pic5.jpg" data-lightbox="hotel" data-title="LOTUS"><img src="pic5.jpg"> </a>
+    <a href="pic7.jpg" data-lightbox="hotel" data-title="LOTUS"><img src="pic7.jpg"> </a>
+    <a href="pic8.jpg" data-lightbox="hotel" data-title="LOTUS"><img src="pic8.jpg"> </a>
+    <a href="pic10.jpg" data-lightbox="hotel" data-title="LOTUS"><img src="pic10.jpg"> </a>
+    <a href="pic12.jpg" data-lightbox="hotel" data-title="LOTUS"><img src="pic12.jpg"> </a>
+    <a href="pic13.jpg" data-lightbox="hotel" data-title="LOTUS"><img src="pic13.jpg"> </a>
+    <a href="pic21.jpg" data-lightbox="hotel" data-title="LOTUS"><img src="pic21.jpg"> </a>
+</section>  
+   
+    </div>
+<section class="About_Us">
+    <div class="background">
+  <div class="About_Us" id="about us" >
+  <h1 style="font-size: 50px;margin:50px; color: darkblue;"><span><center>About LOTUS five star hotel</center></span></h1>
+  <p style= "font-size: 25px; color:rgb(19, 19, 20);">In a sleek high-rise building overlooking the Laccadive Sea, this upmarket hotel is 4 minutes' walk from Liberty Plaza mall and 35 km from Bandaranaike International Airport.
+    Featuring floor-to-ceiling windows with sea or city views, the chic rooms provide free Wi-Fi, flat-screens, minibars, and tea and coffeemaking facilities.
+    Upgraded rooms have Nespresso machines and access to a private lounge. Suites add living areas. Room service is available.
+    There's a buffet eatery, plus French and Japanese restaurants. A rooftop terrace has an infinity pool, a hot tub, a cocktail bar and sea views. Other amenities include a spa and a gym.
+    <br>
+    Check-in time: 14:00
+    <br>
+    Check-out time: 12:00
+ </p>
+    
+    </div>
+  </div>
+</section>
+
+<section class="Contact">
+  <div class="contact" id="contact" >
+  <div class="container contact-row">
+          <div class="container-left-col" style="width: 50%; float: left;">
+              <h1><center>Sign up to cotact<br>with us</center></h1>
+              <form>
+                  <input type="text" placeholder="Enter Name">
+                  <input type="email" placeholder="Enter Email">
+                  <input type="password" placeholder="Password">
+                  <div class="btn-box">
+                      <button class="common-btn" >Sign In</button>
+                      <button class="common-btn" >Sign Up</button>
+                      
+                  </div>
+              </form>
+              <div class="line">
+                  <span class="line-1"></span><br>
+                  <span class="line-2"></span><br>
+                  <span class="line-3"></span><br>
+              </div>
+          </div>
+          <div class="contact-right-col" style="width: 50%; float: right; margin-top: 85px;">
+              <img src="contact.png">
+          </div>
+      </div> 
+</section>
+<!-- <section class="Contact">
+    <div class="contact" id="contact">
+        <ht>Address & contact information</ht>
+        <p>24 Srimath Anagarika Dharmapala Mawatha, Colombo 00300
+            <br>
+            0117 450 450
+        </p>
+        <div class="video-player" id="videoPlayer">
+          <video width="100%" controls autoplay id="myvideo">
+              <source src="guest room.mp4" type="video/mp4">
+          </video>
+          <img src="close.png" class="close-btn" onclick="stopVideo()">
+      </div> -->
+</body>
+</html>
